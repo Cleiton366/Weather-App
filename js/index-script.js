@@ -12,7 +12,7 @@ $(document).on('click', '.divCity', function () {
     renderInfo(contentId);
 })
 //close moreInfo
-$(document).on("click", ".fa-arrow-left", function () {
+$(document).on("click", ".backIcon", function () {
     document.getElementById("cityList").style.marginTop = "-150px";
     $("#moreInfo").hide();
     $("#divLogo").show();
@@ -79,7 +79,7 @@ function renderInfo(id) {
     var iconUrl = "http://openweathermap.org/img/w/"+cities[id].weather[0].icon+".png";
     var render =
         "<div id='moreInfo'>" +
-        "<i class='fas fa-arrow-left'></i>" +
+        "<img class='backIcon' src='../weather-app/assets/icons/arrow-91-24.png'>" +
         "<img class='moreInfoIcon' src='"+iconUrl+"'>" +
         "<h3 class='cityName'>" + cities[id].name + "</h3>" +
         "<h4 class='cityTemp'>Current: " + cities[id].main.temp + " °C</h4>" +
@@ -109,7 +109,7 @@ function changeBackground(id){
         document.body.style.backgroundImage = "url('../weather-app/assets/backgrounds/rain-4806609_1920.jpg')";
     }else if(temp === "mist" || temp == "haze"){
         document.body.style.backgroundImage = "url('../weather-app/assets/backgrounds/conifers-1836582_1920.jpg')";
-    }else if(temp === "thunderstorm"){
+    }else if(temp === "thunderstorm"|| temp == "heavy intensity rain"){
         document.body.style.backgroundImage = "url('../weather-app/assets/backgrounds/lightning-1158027_1920.jpg')";
     }
 }
