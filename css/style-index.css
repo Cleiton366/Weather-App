@@ -1,0 +1,170 @@
+/*page config*/
+body {
+    background-image: url("../assets/backgrounds/adult-1867665_1920.jpg");
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+    transition: background-image 1s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    height: 760px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-container {
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* logo div*/
+
+#divLogo {
+    color: white;
+    text-shadow: 3px 1px black;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+#appLogo {
+    margin-top: -150px;
+    margin-left: 130px;
+    width: 100px;
+    height: 100px;
+}
+
+/* search div */
+
+#divSearch {
+    margin-top: 120px;
+    margin-left: -30px;
+}
+
+#divBtn {
+    border: 2px solid white;
+    width: 120px;
+    height: 32px;
+    margin-left: 528px;
+    margin-top: -36px;
+}
+
+#searchCity {
+    margin-right: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid white;
+    width: 520px;
+    height: 30px;
+}
+
+#searchCity::placeholder {
+    color: white;
+}
+
+.btn {
+    border: 5px solid white;
+    width: 120px;
+    height: 31px;
+    font-size: 12pt;
+    color: white;
+    border-style: none;
+    background-color: rgba(12, 33, 218, 0.5);
+}
+
+/* cities temperature grid */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1080px;
+    text-align: center;
+}
+
+#cityList {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.divCity {
+    transition: transform .2s;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 5px;
+    height: 200px;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divCity:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+.divCity>img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.fa-times {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* more info div */
+
+#moreInfo {
+    width: 600px;
+    height: 400px;
+    margin-right: 450px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.moreInfoIcon {
+    margin-top: -30px;
+    margin-right: 450px;
+    width: 80px;
+    height: 80px;
+}
+
+.cityTemp, .cityMin, .cityMax, .cityName {
+    margin-right: 450px;
+}
+
+.cityFeelsLike, .cityHumidity, .cityDescription {
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.fa-arrow-left {
+    color: white;
+    margin-top: 360px;
+    margin-left: 590px;
+}
