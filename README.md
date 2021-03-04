@@ -10,7 +10,7 @@ you can see the links to every image bellow.
 A simple app with [OpenWeatherMap API](https://openweathermap.org/api)(no affiliation) to see the weather forecast on any given city.
 
 # Requirements
-All you need to run this app is to get a free API key at [OpenWeatherMap](https://openweathermap.org/price).
+All you need to run this app is a free API key, you can generate your API key at [OpenWeatherMap](https://openweathermap.org/price).
 
 Insert your API key at api-key.js file and save the file.
 
