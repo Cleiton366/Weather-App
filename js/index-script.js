@@ -1,5 +1,4 @@
 var cities = [];
-var apiKey = '9f4199f4cccf3ad96a5041911c19a8d6';
 
 //open moreInfo
 $(document).on('click', '.divCity', function () {
