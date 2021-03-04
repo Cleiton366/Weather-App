@@ -38,6 +38,10 @@ function addCity() {
         document.getElementById("searchCity").value = "";
         return;
     }
+    if (apiKey === ""){
+        alert("Insert your API key at api-key.js");
+        return;
+    }
     if (document.getElementById("searchCity").value == "") {
         alert("No one has ever named a city with no name, you must type a valid city name >:[");
     } else {
