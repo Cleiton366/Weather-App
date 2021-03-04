@@ -11,6 +11,7 @@ A simple app with [OpenWeatherMap API](https://openweathermap.org/api)(no affili
 
 # Requirements
 All you need to run this app is to get a free API key at [OpenWeatherMap](https://openweathermap.org/price).
+
 Insert your API key at api-key.js file and save the file.
 
 # Screenshots:
