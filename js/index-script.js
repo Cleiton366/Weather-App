@@ -18,12 +18,25 @@ $(document).on("click", ".backIcon", function () {
     $("#divSearch").show();
     renderCities();
 })
-//delete city
-$(document).on("click", ".fa-times", function () {
-    var contentId = $(this).attr("id");
-    cities.splice(contentId, 1);
+function closeInfo(){
+    document.getElementById("cityList").style.marginTop = "-150px";
+    $("#moreInfo").hide();
+    $("#divLogo").show();
+    $("#divSearch").show();
     renderCities();
-    console.log("City " + contentId + " removed");
+}
+//delete city
+$(document).on("click", ".deletebtn", function () {
+    var contentId = $(this).attr("id");
+    console.log(contentId);
+    cities.splice(contentId, 1);
+
+    if(cities.length == 0){
+        closeInfo();
+    }else{
+        renderCities();
+        renderInfo(0);
+    }
 })
 $(document).on("keypress", function (e) {
     if (e.which == 13) {
@@ -62,8 +75,7 @@ function renderCities() {
     var render = "";
     var iconUrl = "";
 
-    for (var i = 0; i < cities.length; i++) {
-        console.log("indice:"+i);       
+    for (var i = 0; i < cities.length; i++) {   
         iconUrl = "http://openweathermap.org/img/w/"+cities[i].weather[0].icon+".png";
         render = render +
             "<div id='" + i + "'class='divCity'>" +
@@ -81,7 +93,7 @@ function renderInfo(id) {
     console.log("function called: renderInfo");
     var iconUrl = "http://openweathermap.org/img/w/"+cities[id].weather[0].icon+".png";
     var render =
-        "<div id='moreInfo'>" +
+        "<div class='moreInfo'>" +
         "<img class='backIcon' src='../weather-app/assets/icons/arrow-91-24.png'>" +
         "<img class='moreInfoIcon' src='"+iconUrl+"'>" +
         "<h3 class='cityName'>" + cities[id].name + "</h3>" +
@@ -91,6 +103,7 @@ function renderInfo(id) {
         "<h4 class='cityFeelsLike'>Feels like: " + cities[id].main.feels_like+ " °C</h4>" +
         "<h4 class='cityHumidity'>Humidity: "+cities[id].main.humidity+"% </h4>"+
         "<h4 class='cityDescription'>"+cities[id].weather[0].description+"</h4>"+
+        "<img id='"+id+"' class='deletebtn' src='../Weather-App/assets/icons/trash-10-512.gif'>"
         "</div>";
 
     document.getElementById("moreInfo").innerHTML = render;

@@ -138,10 +138,7 @@ a {
 
 /* more info div */
 
-#moreInfo {
-    width: 600px;
-    height: 400px;
-    margin-right: 450px;
+.moreInfo {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
@@ -164,6 +161,15 @@ a {
 }
 
 .backIcon {
+    height: 35px;
+    width: 35px;
     margin-top: 380px;
-    margin-left: 590px;
+    margin-left: 580px;
+}
+
+.deletebtn{
+    height: 35px;
+    width: 35px;
+    margin-left: 570px;
+    margin-top: 100px;
 }
