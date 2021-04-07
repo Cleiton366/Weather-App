@@ -1,5 +1,4 @@
 var cities = [];
-
 //open moreInfo
 $(document).on('click', '.divCity', function () {
     var contentId = $(this).attr("id");
@@ -12,14 +11,14 @@ $(document).on('click', '.divCity', function () {
 })
 //close moreInfo
 $(document).on("click", ".backIcon", function () {
-    document.getElementById("cityList").style.marginTop = "-150px";
+    document.getElementById("cityList").style.marginTop = "100px";
     $("#moreInfo").hide();
     $("#divLogo").show();
     $("#divSearch").show();
     renderCities();
 })
 function closeInfo(){
-    document.getElementById("cityList").style.marginTop = "-150px";
+    document.getElementById("cityList").style.marginTop = "100px";
     $("#moreInfo").hide();
     $("#divLogo").show();
     $("#divSearch").show();

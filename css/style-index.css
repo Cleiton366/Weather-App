@@ -1,22 +1,19 @@
 /*page config*/
+
 body {
-    background-image: url("../assets/backgrounds/adult-1867665_1920.jpg");
+    background: url('../assets/backgrounds/adult-1867665_1920.jpg') no-repeat center fixed;
+    background-size: cover;
     margin: 0px;
-    padding: 0px;
+    height: 100%;
+    width: 100%;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 3s ease-in-out;
 }
 
 a {
     text-decoration: none;
-}
-
-#main {
-    height: 760px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .small-container {
@@ -27,39 +24,36 @@ a {
     padding-right: 25px;
 }
 
-/* logo div*/
-
-#divLogo {
-    color: white;
-    text-shadow: 3px 1px black;
-    margin-left: 300px;
-    margin-top: 100px;
-}
-
-#appLogo {
-    margin-top: -150px;
-    margin-left: 130px;
-    width: 100px;
-    height: 100px;
-}
-
 /* search div */
 
 #divSearch {
-    margin-top: 120px;
-    margin-left: -30px;
+    padding-top: 30px;
+    width: 1000px;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 20vw;
+    display: flex;
+}
+
+#logoName {
+    margin-bottom: -25px;
+    color: white;
+    text-shadow: 3px 1px black;
+}
+
+#appLogo {
+    margin-top: -15px;
+    width: 100px;
+    height: 100px;
 }
 
 #divBtn {
     border: 2px solid white;
     width: 120px;
     height: 32px;
-    margin-left: 528px;
-    margin-top: -36px;
 }
 
 #searchCity {
-    margin-right: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: 2px solid white;
@@ -93,7 +87,7 @@ a {
 
 #cityList {
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 20vw;
 }
 
 .divCity {
@@ -113,27 +107,13 @@ a {
 }
 
 .divCity>img {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
     height: 70px;
     width: 70px;
 }
 
 .icon {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
     height: 70px;
     width: 70px;
-}
-
-.fa-times {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 140px;
-    margin-top: 10px;
-    color: white;
 }
 
 /* more info div */
@@ -167,7 +147,7 @@ a {
     margin-left: 580px;
 }
 
-.deletebtn{
+.deletebtn {
     height: 35px;
     width: 35px;
     margin-left: 570px;

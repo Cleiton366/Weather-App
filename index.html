@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>         
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,13 @@
 
 <body>
     <section id="main">
-        <div id="divLogo">
-            <h3>Weather App</h3>
-            <img id="appLogo" src="..\weather-app\assets\icons\iconfinder_weather15_4102325.png" alt="">
-        </div>
-        <div class="small-container" id="divSearch">
-            <input id="searchCity" type="text" placeholder="Type here a city..">
-            <div id="divBtn"><input id="searchBtn" class="btn" type="button" value="Search" onclick="addCity()"></div>
-        </div>
+            <div id="divSearch">
+                <h3 id="logoName">Weather App</h3>
+                <img id="appLogo" src="..\weather-app\assets\icons\iconfinder_weather15_4102325.png">
+                <input id="searchCity" type="text" placeholder="Type here a city..">
+                <div id="divBtn"><input id="searchBtn" class="btn" type="button" value="Search" onclick="addCity()">
+                </div>
+            </div>
         <div class="grid" id="cityList"></div>
         <div class="small-container" id="moreInfo"></div>
     </section>
